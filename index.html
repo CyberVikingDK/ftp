@@ -92,22 +92,22 @@
             import random<br><br>
     
             tutulan_sayi = random.randint(1, 100)<br>
-            print("1 ile 100 arasında bir sayı tuttum. 3 tahmin hakkın var!")<br><br>
+            print("1 ile 100 arasında bir sayı tuttum. 3 tahmin hakkın var.")<br><br>
     
             for degisken in range(3):<br>
             &nbsp;&nbsp;&nbsp;&nbsp;tahmin = int(input(f"{degisken + 1}. tahminini gir (1-100): "))<br><br>
     
             &nbsp;&nbsp;&nbsp;&nbsp;if tahmin == tutulan_sayi:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Tebrikler! Doğru tahmin ettin, kazandın!")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Doğru tahmin ettin, kazandın.")<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
             &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fark = abs(tutulan_sayi - tahmin)<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if fark &lt;= 10:<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Çok yakın! Ama hala yanlış. Tekrar dene.")<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif fark &lt;= 20:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Yakınsın, ama değil. Tekrar dene.")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Yakın, ama doğru değil. Tekrar dene.")<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Uzak! Tekrar dene.")<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Uzak, Tekrar dene.")<br><br>
     
             else:<br>
             &nbsp;&nbsp;&nbsp;&nbsp;print(f"Üzgünüm, kaybettin. Tutulan sayı: {tutulan_sayi}")<br>
@@ -120,13 +120,9 @@
             <h2>ben\ödev.go :)</h2>
             <p class="meta">Yayınlanma Tarihi: 03 Aralık 2024 | Yazar: Ben</p>
             <p>
-                Web tasarımı, sadece estetik değil, aynı zamanda kullanıcı deneyimini geliştirme amacını taşıyan bir süreçtir.
-                Tasarımın iyi olması, ziyaretçiler için her şeyin kolayca anlaşılır ve erişilebilir olduğu bir deneyim yaratır.
             </p>
-            <p>
-                Benim bu blogu tasarlarken önceliğim, sade ama şık bir arayüz yaratmak oldu. Okuyucuların metinlere kolayca
-                odaklanabilmesi için gereksiz öğelerden kaçınmak, tasarımın sadeliğini korumak çok önemli. Her yazının düzeni
-                de bu amacı destekliyor.
+            <p class="meta">
+                (galiba hiç bitmeyecek)
             </p>
         </div>
     </div>
