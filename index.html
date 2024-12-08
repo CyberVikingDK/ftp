@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notlarım</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            text-align: center;
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #2ecc71;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+        .blog-post {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .blog-post p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Notlarım</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Hakkında</a>
+        <a href="#">İletişim</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Blog Yazısı 1 -->
+        <div class="blog-post">
+            <h2>kardeş\ödev.py</h2>
+            <p class="meta">Yayınlanma Tarihi: 04 Aralık 2024 | Yazar: Ben</p>
+                <p><br>
+            import random<br><br>
+    
+            tutulan_sayi = random.randint(1, 100)<br>
+            print("1 ile 100 arasında bir sayı tuttum. 3 tahmin hakkın var!")<br><br>
+    
+            for degisken in range(3):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;tahmin = int(input(f"{degisken + 1}. tahminini gir (1-100): "))<br><br>
+    
+            &nbsp;&nbsp;&nbsp;&nbsp;if tahmin == tutulan_sayi:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Tebrikler! Doğru tahmin ettin, kazandın!")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fark = abs(tutulan_sayi - tahmin)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if fark &lt;= 10:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Çok yakın! Ama hala yanlış. Tekrar dene.")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif fark &lt;= 20:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Yakınsın, ama değil. Tekrar dene.")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Uzak! Tekrar dene.")<br><br>
+    
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(f"Üzgünüm, kaybettin. Tutulan sayı: {tutulan_sayi}")<br>
+        </p>
+            
+        <!-- Blog Yazısı 2 --></div>
+    
+        
+        <div class="blog-post">
+            <h2>ben\ödev.go :)</h2>
+            <p class="meta">Yayınlanma Tarihi: 03 Aralık 2024 | Yazar: Ben</p>
+            <p>
+                Web tasarımı, sadece estetik değil, aynı zamanda kullanıcı deneyimini geliştirme amacını taşıyan bir süreçtir.
+                Tasarımın iyi olması, ziyaretçiler için her şeyin kolayca anlaşılır ve erişilebilir olduğu bir deneyim yaratır.
+            </p>
+            <p>
+                Benim bu blogu tasarlarken önceliğim, sade ama şık bir arayüz yaratmak oldu. Okuyucuların metinlere kolayca
+                odaklanabilmesi için gereksiz öğelerden kaçınmak, tasarımın sadeliğini korumak çok önemli. Her yazının düzeni
+                de bu amacı destekliyor.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Notlarım. Tüm hakları saklıdır.</p>
+    </footer>
+    
+    
+    </body>
+</html>
